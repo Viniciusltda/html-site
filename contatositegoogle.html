@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="estilositegoogle.css"/>
+    <link rel="stylesheet" href="estilocontsitegoogle.css"/>
+
+    <title>
+        Google Glass
+
+    </title>
+
+    <script languange="javascript" src = "funcoes.js"></script>
+
+</head>
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+    <h2>A revolução do Google está chegando!</h2>
+
+    <img id="icone" src="curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png"/>
+
+    <nav id="menu">
+    <h2>Menu Principal</h2>
+    <ul> 
+    <li><a href="sitegoogleglass.html" onmouseover="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/casa.png')" onmouseout="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">Home</a></li>
+    <li><a href="especsitegoogle.html" onmouseover="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/configs.png')" onmouseout="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">Especificações</a></li>
+    <li><a href="fotositegoogle.html" onmouseover="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')" onmouseout="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">Fotos</a></li>
+    <li><a href="multsitegoogle.html" onmouseover="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/multi.png')" onmouseout="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">Vídeos & Áudios</a></li>
+    <li><a href="contatositegoogle.html" onmouseover="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')" onmouseout="trocar('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">Contato</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <hgroup id="autor">
+    <h3 style="margin-top:0px; margin-left:4px;">Fale Conosco > Contato</h3> 
+    <h1>Formulário de Contato</h1> 
+    <h2>por Gustavo Guanabara</h2> 
+    <h3 style="text-align:right; font-size:11pt; margin-bottom:0px">Atualizado em 01/Maio/2013</h3> 
+    </hgroup>
+
+    <form>
+        <fieldset id="user">
+        <legend>Identificação do Usuário</legend> 
+            <p>Nome: <input type="text" name="nome" id="inome" maxlength="35" placeholder="Nome Completo" required="required"></p> 
+            <p>Senha: <input type="password" name="senha" id="isenha" maxlength="14" size="14" minlength="5" required="required"></p> 
+            <p>E-mail: <input type="email" name="email" id="iemail" maxlength="35"></p> 
+            <fieldset id="sexo"><legend>Sexo:</legend> <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label> <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label></fieldset> 
+            <p>Data de Nascimento: <input type="date" name="data" id="idata"></p>
+        </fieldset>
+        <fieldset id="endereço">
+        <legend>Endereço do Usuário</legend> 
+            <p>Logradouro: <input type="text" name="logra" id="ilogra" size="16" maxlength="90" placeholder="Rua, Av, Trav, ..."></p> 
+            <p>Número: <input type="number" name="num" id="inum" min="0" max="9999"></p> 
+            <p>Estado:</p> 
+            <p>Cidade:</p>
+        </fieldset>
+        <fieldset id="msg"> 
+        <legend>Mensagem do Usuário</legend> 
+            Grau de Urgência: 
+            Mensagem:
+        </fieldset>
+        <fieldset id="compra"> 
+        <legend>Quero um Google Glass</legend> 
+            Gostaria de adquirir um Google Glass quando disponível 
+            Cor: 
+            Quantidade: 
+            Preço Total: R$
+        </fieldset>
+        [BOTÃO ENVIAR]
+        
+    </form>
+
+    <footer id="rodape">
+        Copyright &copy; 2013 - by Gustavo Guanabara <br> 
+        <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a>
+       </footer>
+</div>
+</body>
+</html>

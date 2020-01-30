@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'fontelogo2';
+    src: url("curso-html5-pacote01/projeto-glass-html5/_fonts/Louis\ George\ Cafe.ttf");
+
+}
+
+body {
+    font-family:'fontelogo2';
+
+}
+
+hgroup#autor {
+    border-bottom:2px solid black;
+
+}
+
+fieldset#sexo {
+    border:none;
+    
+}

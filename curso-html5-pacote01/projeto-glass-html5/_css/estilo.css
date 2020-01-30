@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Formatação padrão de estilo */
+
+h1{
+    font-family: cursive;
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 44px;
+
+}
+
+body {
+    background-color: #f2f2f2;
+
+}
+
+/* Formatação de imagens */
+
+figure.foto-e-leg {
+    border: 8px solid silver;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+    width: 600px;
+
+}
+
+figure.foto-e-leg img {
+    width: 100%;
+    height: 100%;
+
+}
+
+figure.foto-e-leg figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity .3s;
+
+}
+
+figure.foto-e-leg:hover figcaption {
+    opacity: 1;
+
+}

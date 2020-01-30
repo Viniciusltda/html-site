@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'fontelogo2';
+    src: url("curso-html5-pacote01/projeto-glass-html5/_fonts/Louis\ George\ Cafe.ttf");
+}
+
+hgroup#autor {
+    border-bottom:2px solid black;
+
+}
+
+section {
+    font-family: 'fontelogo2';
+
+}
+
+section h1 {
+    background-color:silver;
+    border-radius:4px;
+    padding:2px;
+    box-shadow:0px 0px 2px black;
+    text-shadow:1px 1px 2px gray;
+
+}
+
+div.mix {
+    width:900px;
+    height:580px;
+    margin:auto;
+    background:url("curso-html5-pacote01/projeto-glass-html5/_imagens/radio-tv.png") no-repeat;
+
+}
+
+audio#som {
+    display:block;
+    position:relative;
+    left:575px;
+    top:490px;
+    width:300px;
+
+}
+
+video#video {
+    display:block;
+    position:relative;
+    left:75px;
+    height:350px;
+    width:462px;
+    border-radius:10px;
+
+}
