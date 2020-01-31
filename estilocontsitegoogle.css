@@ -17,5 +17,108 @@ hgroup#autor {
 
 fieldset#sexo {
     border:none;
+    text-align:left;
+    width:190px;
     
+}
+legend#sexo {
+    text-align:left;
+    font-weight: normal;
+    text-shadow:none;
+    background-color: transparent;
+    box-shadow:none;
+    color:black;
+    font-size:12pt;
+
+}
+
+textarea {
+    resize: none;
+    vertical-align:middle;
+
+}
+
+form {
+    width:550px;
+    margin:auto;
+    margin-top:15px;
+
+}
+
+input#iconfm {
+    font-family:'fontelogo2';
+    border-radius:2px;
+    box-shadow:0px 0px 2px black;
+    text-shadow:1px 1px 2px gray;
+    font-size:10pt;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom:20px;
+    height:40px;
+    position: relative;
+    left:205px;
+
+}
+
+input#iconfm:hover {
+    background-color:#dbdbdb;
+
+}
+
+legend {
+    text-align:center;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black;
+    background-color:#6e6e6e;
+    color:#d1d1d1;
+    padding:3px;
+    border-radius:4px;
+    box-shadow:0px 0px 3px black;
+    font-size:14pt;
+
+}
+
+fieldset {
+    margin-top:10px;
+    background-color:#f7f7f7;
+
+}
+
+fieldset#msg p#pem {
+    left:165px;
+    position: relative;
+
+}
+
+p#mem {
+    margin-left:65px;
+    position:relative;
+    
+
+}
+
+input#ipreco {
+    border:none;
+    font-weight: bold;
+}
+
+input#iquant {
+    border:none;
+    margin-left:10px;
+    font-size:11pt;
+
+}
+
+select#icor {
+    border:none;
+    margin-left:10px;
+
+}
+
+fieldset#compra span {
+    background-color:silver;
+    border-radius:2px;
+    padding:1px;
+    box-shadow:0px 0px 2px black;
+
 }

@@ -39,35 +39,76 @@
     <h3 style="text-align:right; font-size:11pt; margin-bottom:0px">Atualizado em 01/Maio/2013</h3> 
     </hgroup>
 
-    <form>
+    <form method="POST" oninput="Calculo()">
         <fieldset id="user">
         <legend>Identificação do Usuário</legend> 
             <p>Nome: <input type="text" name="nome" id="inome" maxlength="35" placeholder="Nome Completo" required="required"></p> 
             <p>Senha: <input type="password" name="senha" id="isenha" maxlength="14" size="14" minlength="5" required="required"></p> 
             <p>E-mail: <input type="email" name="email" id="iemail" maxlength="35"></p> 
-            <fieldset id="sexo"><legend>Sexo:</legend> <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label> <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label></fieldset> 
+            <fieldset id="sexo"><legend id="sexo">Sexo:</legend> <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label> <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label></fieldset> 
             <p>Data de Nascimento: <input type="date" name="data" id="idata"></p>
         </fieldset>
         <fieldset id="endereço">
         <legend>Endereço do Usuário</legend> 
             <p>Logradouro: <input type="text" name="logra" id="ilogra" size="16" maxlength="90" placeholder="Rua, Av, Trav, ..."></p> 
             <p>Número: <input type="number" name="num" id="inum" min="0" max="9999"></p> 
-            <p>Estado:</p> 
-            <p>Cidade:</p>
+            <p>Estado:
+                <select name="estado" id="iestado">
+                    <option>AC</option>
+                    <option>AM</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </p> 
+            <p>Cidade: <input type="text" name="cidade" id="icidade" maxlength="65" size="25"></p>
         </fieldset>
+
         <fieldset id="msg"> 
         <legend>Mensagem do Usuário</legend> 
-            Grau de Urgência: 
-            Mensagem:
+            <p id="pem">Grau de Urgência:<br> Min<input type="range" min="0" max="10" name="graur" id="igraur" step="5">Max</p> 
+            <p id="mem">
+            <textarea name="msgu" id="imsgu" cols="45" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea></p>
         </fieldset>
         <fieldset id="compra"> 
-        <legend>Quero um Google Glass</legend> 
-            Gostaria de adquirir um Google Glass quando disponível 
-            Cor: 
-            Quantidade: 
-            Preço Total: R$
+        <legend>Quero um Google Glass</legend>  
+            <p><span>Cor</span><select name="cor" id="icor">
+                <option>Azul</option>
+                <option>Branco</option>
+                <option>Preto</option>
+                <option>Prateado</option>
+                <option>Vermelho</option>
+                <option>Amarelo</option>
+            </select></p> 
+            <p><span>Quantidade</span><input type="number" name="quant" id="iquant" min="1" max="50" value="1"></p> 
+            <p><span>Preço Total</span> <b>R$</b><input type="text" name="preco" id="ipreco" readonly value="1000"></p>
+
+            <p><input type="checkbox" name="check" id="icheck"> <label for="icheck">Gostaria de receber atualizações sobre o Google Glass</label></p>
         </fieldset>
-        [BOTÃO ENVIAR]
+
+        <input type="button" value="Confirmar Pedido" name="confm" id="iconfm">
         
     </form>
 
